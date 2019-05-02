@@ -103,7 +103,7 @@ FROM
 
 --- Copy above ---
 
-Once the view are created place newsreportingtool.py in your python environment then run python newsreportingtool in the terminal. To view an sample output refer to output.txt
+Once the views are created, place newsreportingtool.py in your python environment then run python newsreportingtool in the terminal. To view an sample output refer to output.txt
 
 
 
