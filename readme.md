@@ -1,6 +1,15 @@
-News reporting is a text report that was written to answer the following question.
+News reporting is a text report that was written to answer the following:
 
-Please create the below views before running newsreportingtool.py
+-Most popular three articles of all time : Title - Views
+
+-Most accessed articles of all time : Title - Views
+
+-Most popular authors : Author - Views
+
+-Failure % above 1 % by date: Date | Failure %
+
+Please create the below views in psql in your terminal before running newsreportingtool.py
+
 --Copy below--
 CREATE VIEW threetopslugs as
 SELECT
