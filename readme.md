@@ -103,35 +103,7 @@ FROM
 
 --- Copy above ---
 
-Once the view are created place newsreportingtool.py in your python environment then run python newsreportingtool in the terminal and you should see the output below:
+Once the view are created place newsreportingtool.py in your python environment then run python newsreportingtool in the terminal. To view an sample output refer to output.txt
 
 
-Most popular three articles of all time : Title - Views
----------------------------
-Bad things gone, say good people  -  170098 views
-Bears love berries, alleges bear  -  253801 views
-Candidate is jerk, alleges rival  -  338647 views
 
-Most accessed articles of all time : Title - Views
----------------------------
-Candidate is jerk, alleges rival  -  338647 views
-Bears love berries, alleges bear  -  253801 views
-Bad things gone, say good people  -  170098 views
-Goats eat Google's lawn  -  84906 views
-Trouble for troubled troublemakers  -  84810 views
-Balloon goons doomed  -  84557 views
-There are a lot of bears  -  84504 views
-Media obsessed with bears  -  84383 views
-
-Most popular authors : Author - Views
----------------------------
-Markoff Chaney  -  84557 views
-Rudolf von Treppenwitz  -  423457 views
-Ursula La Multa  -  507594 views
-Anonymous Contributor  -  170098 views
-
-Failure % above 1 % by date: Date | Failure %
----------------------------
-2016-07-17  -  2 %
- -----------------------------
-Report generated on 2019-05-02 16:54:56.520479
