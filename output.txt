@@ -1,29 +1,29 @@
 Most popular three articles of all time : Title - Views
 ---------------------------
-Bad things gone, say good people  -  170098 views
-Bears love berries, alleges bear  -  253801 views
 Candidate is jerk, alleges rival  -  338647 views
+Bears love berries, alleges bear  -  253801 views
+Bad things gone, say good people  -  170098 views
 
 Most accessed articles of all time : Title - Views
 ---------------------------
-Candidate is jerk, alleges rival  -  338647 views
-Bears love berries, alleges bear  -  253801 views
-Bad things gone, say good people  -  170098 views
-Goats eat Google's lawn  -  84906 views
-Trouble for troubled troublemakers  -  84810 views
-Balloon goons doomed  -  84557 views
-There are a lot of bears  -  84504 views
 Media obsessed with bears  -  84383 views
+There are a lot of bears  -  84504 views
+Balloon goons doomed  -  84557 views
+Trouble for troubled troublemakers  -  84810 views
+Goats eat Google's lawn  -  84906 views
+Bad things gone, say good people  -  170098 views
+Bears love berries, alleges bear  -  253801 views
+Candidate is jerk, alleges rival  -  338647 views
 
 Most popular authors : Author - Views
 ---------------------------
-Markoff Chaney  -  84557 views
-Rudolf von Treppenwitz  -  423457 views
 Ursula La Multa  -  507594 views
+Rudolf von Treppenwitz  -  423457 views
 Anonymous Contributor  -  170098 views
+Markoff Chaney  -  84557 views
 
 Failure % above 1 % by date: Date | Failure %
 ---------------------------
-2016-07-17  -  2 %
+2016-07-17  -  2.3150689945463197 %
  -----------------------------
-Report generated on 2019-05-02 17:10:59.716511
+Report generated on 2019-05-03 23:20:41.039966

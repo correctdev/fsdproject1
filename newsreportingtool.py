@@ -8,7 +8,8 @@ c = db.cursor()
 top3 = "Select articles.title , threetopslugs.hits , \
 threetopslugs.article , articles.slug \
 FROM articles INNER JOIN threetopslugs \
-ON threetopslugs.article = articles.slug;"
+ON threetopslugs.article = articles.slug \
+ORDER BY threetopslugs.hits DESC; "
 c.execute(top3)
 top3data = c.fetchall()
 print ""
@@ -19,9 +20,10 @@ for row in top3data:
     print row[0], " - ", row[1], "views"
 # Fetch most accessed articles records from the database.
 mostaccesseddata = "SELECT articles.title,\
-mostaccessedarticle.hits, mostaccessedarticle.article, \
+mostaccessedarticles.hits, mostaccessedarticles.article, \
 articles.slug FROM articles INNER JOIN \
-mostaccessedarticle ON articles.slug = mostaccessedarticle.article;"
+mostaccessedarticles ON articles.slug = mostaccessedarticles.article \
+ORDER BY mostaccessedarticles.hits ASC;"
 c.execute(mostaccesseddata)
 mostaccesseddata = c.fetchall()
 # And let's loop over it too:
@@ -34,7 +36,8 @@ for row in mostaccesseddata:
 popularauthorsdata = "SELECT authors.name, mostpopularauthor.hitsbyauthor,\
 authors.id, mostpopularauthor.author \
 FROM authors INNER JOIN mostpopularauthor \
-ON authors.id = mostpopularauthor.author;"
+ON authors.id = mostpopularauthor.author \
+ORDER BY mostpopularauthor.hitsbyauthor DESC;"
 c.execute(popularauthorsdata)
 popularauthorsdata = c.fetchall()
 # And let's loop over it too:
