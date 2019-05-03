@@ -3,7 +3,7 @@ News reporting is a text report that was written to answer the following questio
 Prerequisites:
 Have the news database installed
 
- to install the news database download and unzip newsdata.zip then run the following command in your terminal. 
+ popluate the news database download and unzip newsdata.zip then run the following command in your terminal. 
     psql -d news -f newsdata.sql
     
 Now that you have data it time to create the psql views need to run the program. Run the following command in your terminal.
