@@ -1,8 +1,8 @@
-News reporting is a text report that was written to answer the following question.
--Most popular three articles of all time : Title - Views
--Most accessed articles of all time : Title - Views
--Most popular authors : Author - Views
--Failure % above 1 % by date: Date | Failure %
+<h2>News reporting is a text report that was written to answer the following question.</h2></br>
+-Most popular three articles of all time : Title - Views</br>
+-Most accessed articles of all time : Title - Views</br>
+-Most popular authors : Author - Views</br>
+-Failure % above 1 % by date: Date | Failure %</br>
 
 
 Prerequisites:
