@@ -52,7 +52,7 @@ for row in popularauthorsdata:
     print row[0], " - ", row[1], "views"
 
 # Fetch Failure % records from the database.
-failsdata = "SELECT days , pass , fail , float FROM float where float > 1;"
+failsdata = "SELECT days , pass , fail , float * 100 FROM float where float > 1;"
 c.execute(failsdata)
 failsdata = c.fetchall()
 # And let's loop over it too:
