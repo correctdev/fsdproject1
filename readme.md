@@ -13,7 +13,7 @@ Popluate the news database by downloading and unziping newsdata.zip then run the
     
 Now that you have data it time to create the psql views need to run the program. Run the following command in your terminal.
 
-<code>psql -d news -f newsdata.sql</code>
+<code>psql -d news -f views.sql</code>
 
 <h3>Running the program:</h3>
 
