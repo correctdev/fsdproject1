@@ -2,6 +2,10 @@
 import psycopg2
 import datetime
 
+def printinfo():
+   print "Report generated on", datetime.datetime.now()
+   return;
+try:
 db = psycopg2.connect("dbname=news")
 # Fetch top 3 articles records from the database.
 c = db.cursor()
@@ -57,7 +61,9 @@ print "Failure % above 1 % by date: Date | Failure %"
 print "---------------------------  "
 for row in failsdata:
     print row[0], " - ", row[3], "%"
-
+except (Exception, psycopg2.DatabaseError) as error :
+    print ("Error while creating PostgreSQL table", error)
+finally:
 db.close()
-print " -----------------------------"
-print "Report generated on", datetime.datetime.now()
+printinfo()
+
