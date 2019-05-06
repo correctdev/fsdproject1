@@ -62,7 +62,7 @@ print "---------------------------  "
 for row in failsdata:
     print row[0], " - ", row[3], "%"
 except (Exception, psycopg2.DatabaseError) as error :
-    print ("Error while creating PostgreSQL table", error)
+    print ("Error with PostgreSQL", error)
 finally:
 db.close()
 printinfo()
