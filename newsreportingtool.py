@@ -1,11 +1,6 @@
 #!/usr/bin/python
 import psycopg2
 import datetime
-
-def printinfo():
-   print "Report generated on", datetime.datetime.now()
-   return;
-try:
 db = psycopg2.connect("dbname=news")
 # Fetch top 3 articles records from the database.
 c = db.cursor()
@@ -52,7 +47,8 @@ for row in popularauthorsdata:
     print row[0], " - ", row[1], "views"
 
 # Fetch Failure % records from the database.
-failsdata = "SELECT days , pass , fail , float * 100 FROM float where float > 1;"
+failsdata = "SELECT days, pass, fail, ROUND(float,2) FROM  \
+float WHERE float > 1;"
 c.execute(failsdata)
 failsdata = c.fetchall()
 # And let's loop over it too:
@@ -61,9 +57,5 @@ print "Failure % above 1 % by date: Date | Failure %"
 print "---------------------------  "
 for row in failsdata:
     print row[0], " - ", row[3], "%"
-except (Exception, psycopg2.DatabaseError) as error :
-    print ("Error with PostgreSQL", error)
-finally:
-db.close()
-printinfo()
-
+    db.close()
+print "Report generated on", datetime.datetime.now()
