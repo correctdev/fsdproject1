@@ -12,4 +12,4 @@ CREATE VIEW failbydays as SELECT COUNT (status) as value, DATE (time) as days FR
 
 CREATE VIEW passfailbydate as SELECT passbydays.days, passbydays.value as pass, failbydays.value as fail FROM failbydays INNER JOIN passbydays ON failbydays.days = passbydays.days;
 
-CREATE VIEW float as SELECT days, pass, fail, (fail+0.0) * 100 / (pass+0.0) as float FROM passfailbydate;
+CREATE VIEW float as SELECT days, pass, fail, (fail+0.0) / (pass+0.0) as float FROM passfailbydate;
