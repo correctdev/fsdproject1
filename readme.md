@@ -5,19 +5,20 @@
 -Failure % above 1 % by date: Date | Failure %</br>
 </br>
 
-<h3>Prerequisites:</h3>
-Access Postgres from the terminal<br>
-<code>psql</code><br>
-Create the news Database.<br>
-<code>CREATE DATABASE news;</code><br>
+## Heading level 3 Prerequisites:
+Access Postgres from the terminal
+>psql
+
+Create the news Database.
+>CREATE DATABASE news;
+
 Popluate the news database by downloading and unziping newsdata.zip then run the following command in your terminal. 
-   <code> psql -d news -f newsdata.sql</code>
+> psql -d news -f newsdata.sql
     
 Now that you have data it time to create the psql views need to run the program. Run the following command in your terminal.
+>psql -d news -f views.sql</code>
 
-<code>psql -d news -f views.sql</code>
-
-<h3>Running the program:</h3>
+## Heading level 3Running the program:
 
 Once the view are created place newsreportingtool.py in your python environment then run python newsreportingtool in the terminal.
 
