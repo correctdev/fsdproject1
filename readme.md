@@ -6,8 +6,10 @@
 </br>
 
 <h3>Prerequisites:</h3>
-Have the news database installed
-
+Access Postgres from the terminal
+<code>psql</code>
+Create the NEWS Database.
+<code>CREATE DATABASE testdb1;</code>
 Popluate the news database by downloading and unziping newsdata.zip then run the following command in your terminal. 
    <code> psql -d news -f newsdata.sql</code>
     
