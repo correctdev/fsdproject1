@@ -24,6 +24,5 @@ Markoff Chaney  -  84557 views
 
 Failure % above 1 % by date: Date | Failure %
 ---------------------------
-2016-07-17  -  2.3150689945463197 %
- -----------------------------
-Report generated on 2019-05-03 23:20:41.039966
+2016-07-17  -  2.26 %
+Report generated on 2019-05-07 03:07:31.279442
