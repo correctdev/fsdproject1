@@ -47,7 +47,7 @@ for row in popularauthorsdata:
     print row[0], " - ", row[1], "views"
 
 # Fetch Failure % records from the database.
-failsdata = "SELECT days, pass, fail, ROUND(float,2) FROM  \
+failsdata = "SELECT days, total, fail, ROUND(float,2) FROM  \
 float WHERE float > 1;"
 c.execute(failsdata)
 failsdata = c.fetchall()
