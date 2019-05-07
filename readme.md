@@ -9,7 +9,7 @@
 Access Postgres from the terminal<br>
 <code>psql</code><br>
 Create the news Database.<br>
-<code>CREATE DATABASE news;</code>
+<code>CREATE DATABASE news;</code><br>
 Popluate the news database by downloading and unziping newsdata.zip then run the following command in your terminal. 
    <code> psql -d news -f newsdata.sql</code>
     
