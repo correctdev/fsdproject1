@@ -10,6 +10,6 @@ CREATE VIEW totalbydays as SELECT COUNT (status) as value, DATE (time) as days F
 
 CREATE VIEW failbydays as SELECT COUNT (status) as value, DATE (time) as days FROM log WHERE status != '200 OK' GROUP BY days;
 
-CREATE VIEW passfailbydate as SELECT totalbydays.days, totalbydays.value as pass, failbydays.value as fail FROM failbydays INNER JOIN totalbydays ON failbydays.days = totalbydays.days;
+CREATE VIEW passfailbydate as SELECT totalbydays.days, totalbydays.value as total, failbydays.value as fail FROM failbydays INNER JOIN totalbydays ON failbydays.days = totalbydays.days;
 
-CREATE VIEW float as SELECT days, pass, fail, ((fail+0.0) / (pass+0.0))*100.0 as float FROM passfailbydate;
+CREATE VIEW float as SELECT days, total, fail, ((fail+0.0) / (pass+0.0))*100.0 as float FROM passfailbydate;
